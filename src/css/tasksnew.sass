@@ -1,0 +1,156 @@
+.container
+	max-width: 1080px
+	width: 100%
+	margin: 0 auto
+	background: #0F1049
+	@media (max-width: 1080px)
+		padding: 0 32px
+		width: auto
+
+.tasks
+	height: 100vh
+	.h1
+		font-weight: 600
+		font-size: 32px
+		line-height: 38px
+	&-content
+		padding: 0 56px
+		@media (max-width: 1080px)
+			padding: 0
+		&_block
+			margin-top: 36px
+			.mytasks
+				max-width: 533px
+				width: 100%
+				margin: 0 auto
+				background: #27168F
+				border-radius: 16px
+			&-top
+				padding: 18px 24px
+				display: flex
+				justify-content: space-between
+				border-bottom: 1px solid #fff
+				.h1
+					font-size: 14px
+					line-height: 130%
+					color: #FFFFFF
+					@media (max-width: 1080px)
+						font-size: 18px
+						font-weight: normal
+				.h2
+					font-size: 14px
+					line-height: 17px
+					color: #FFFFFF
+					@media (max-width: 1080px)
+						font-size: 18px
+						font-weight: normal
+			&-bottom
+				padding: 18px 24px
+				.h1
+					font-size: 14px
+					line-height: 130%
+					color: #FFFFFF
+					@media (max-width: 1080px)
+						font-weight: normal
+						font-size: 18px
+				.level
+					border: 1px solid #FFFFFF
+					box-sizing: border-box
+					border-radius: 42px
+					display: flex
+					position: relative
+					margin-top: 12px
+					padding: 1px
+				.line
+					max-width: 50px
+					background: #FFFFFF
+					border-radius: 24px
+					width: 100%
+					height: 12px
+					position: absolute
+					@media (max-width: 1080px)
+						height: 18px
+				.number
+					font-weight: 500
+					font-size: 12px
+					line-height: 14px
+					align-items: center
+					color: #FFFFFF
+					margin: 0 auto
+					@media (max-width: 1080px)
+						font-size: 14px
+						line-height: 17px
+				.date
+					font-weight: 600
+					font-size: 14px
+					line-height: 17px
+					color: #2873D9
+					background: #FFFFFF
+					border-radius: 8px
+					width: max-content
+					padding: 11px 24px
+					margin-top: 18px
+					@media (max-width: 1080px)
+						margin-top: 36px
+						font-size: 16px
+						line-height: 19px
+						padding: 26px 0
+						width: 100%
+						text-align: center
+		.chose-block
+			max-width: 533px
+			width: 100%
+			margin: 0 auto
+			display: flex
+			justify-content: space-between
+			align-items: center
+			margin-top: 56px
+			@media (max-width: 1080px)
+				flex-direction: column
+				align-items: baseline
+			&_l
+				font-weight: 500
+				font-size: 18px
+				line-height: 21px
+				color: #FFFFFF
+				@media (max-width: 1080px)
+					font-size: 24px
+					line-height: 29px
+			&_r
+				font-weight: bold
+				font-size: 14px
+				line-height: 17px
+				color: #FFFFFF
+				border: 2px dashed #C3C4D1
+				border-radius: 8px
+				padding: 12px 32px
+				@media (max-width: 1080px)
+					margin-top: 32px
+					padding: 25px 0
+					width: 100%
+					text-align: center
+					font-size: 18px
+					line-height: 21px
+		.game-block
+			max-width: 564px
+			width: 100%
+			margin: 36px auto 0
+			display: grid
+			grid-template-columns: repeat(3,1fr)
+			grid-gap: 12px
+			@media (max-width: 1080px)
+				margin: 16px auto 0
+				grid-template-columns: repeat(2,1fr)
+			&_select
+				background: #27168F
+				border-radius: 10px
+				padding: 37px 0
+				text-align: center
+				&.active
+					filter: drop-shadow(0px 4px 25px rgba(0, 102, 255, 0.25))
+					border: 3px solid #4925AF
+			&_title
+				margin-top: 10px
+				font-weight: 500
+				font-size: 16px
+				line-height: 19px

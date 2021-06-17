@@ -1,0 +1,40 @@
+@import "base"
+@import "startnew"
+.q-field
+  input
+    color: #FFFFFF
+  &__control
+    &::before
+      border-bottom: 1px solid #FFFFFF !important
+    & .q-icon
+      color: #FFFFFF
+
+.q-select__dropdown-icon
+  color: #FFFFFF
+
+#puzzle_wrapper
+  height: 90vh
+  width: 120%
+  overflow-y: hidden
+
+
+#forPuzzle
+  border: none
+  width: 1080px
+  left: 0
+  top: 0
+
+.ovh
+  overflow: hidden
+.container-div_h1
+  font-size: 32px
+  font-weight: bold
+.stats
+  & .container
+    padding: 0 55px 55px 55px
+    height: auto
+
+@media (max-width: 768px)
+  #puzzle_wrapper
+    width: 100%
+    height: 80vh
